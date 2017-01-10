@@ -27,6 +27,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
 
 TARGET_KERNEL_CONFIG := fusion3_yuga_defconfig
 
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+
 # Healthd
 BACKLIGHT_PATH := /sys/class/leds/lm3533-lcd-bl/brightness
 
